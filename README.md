@@ -20,7 +20,7 @@ main app which will load plugins and try to use them.
 
 1. Build all plugins and main app using
 
-    cargo build -all
+    cargo build --all
 
 2. Run master by 
 
