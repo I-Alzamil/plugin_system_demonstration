@@ -7,10 +7,23 @@ static LIBRARIES: RwLock<Vec<libloading::Library>> = RwLock::new(Vec::new());
 // List of libraries to load
 // you could use a dir loader instead
 // for this demonstration, we just use const for quick testing
+#[cfg(target_os = "windows")]
 const LIBS: [&str; 3] = [
     "target/debug/plugin_a.dll",
     "target/debug/plugin_b.dll",
     "target/debug/plugin_c.dll"
+];
+#[cfg(target_os = "linux")]
+const LIBS: [&str; 3] = [
+    "target/debug/libplugin_a.so",
+    "target/debug/libplugin_b.so",
+    "target/debug/libplugin_c.so"
+];
+#[cfg(target_os = "macos")]
+const LIBS: [&str; 3] = [
+    "target/debug/libplugin_a.dylib",
+    "target/debug/libplugin_b.dylib",
+    "target/debug/libplugin_c.dylib"
 ];
 
 fn main() {
