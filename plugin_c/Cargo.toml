@@ -1,0 +1,12 @@
+[package]
+name = "plugin_c"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+plugin_interface_old = { path = "../plugin_interface_old", version = "*" }
+rand = "*"
+
+[lib]
+name = "plugin_c"
+crate-type = ["cdylib"] 

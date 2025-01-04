@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "main_demonstration",
+    "plugin_a",
+    "plugin_b",
+    "plugin_c",
+    "plugin_interface",
+    "plugin_interface_old"
+]
