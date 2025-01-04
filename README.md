@@ -19,9 +19,13 @@ main app which will load plugins and try to use them.
 ## Usage
 
 1. Build all plugins and main app using
+
     cargo build -all
+
 2. Run master by 
+
     cargo run -p main_demonstration
+
 
 ## Credit
 Inspired from:
